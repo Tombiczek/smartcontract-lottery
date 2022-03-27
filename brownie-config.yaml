@@ -9,7 +9,17 @@ compiler:
       - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.5.0'
 networks:
   default: development
+  development:
+    keyhash: '0xf86195cf7690c55907b2b611ebb7343a6f649bff128701cc542f0569e2c549da'
+    fee: 100000000000000
   mainnet-fork:
     eth_usd_price_feed: '0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419'
+  rinkeby:
+    vrf_coordinator: '0x6168499c0cFfCaCD319c818142124B7A15E857ab'
+    eth_usd_price_feed: '0x8A753747A1Fa494EC906cE90E9f37563A8AF630e'
+    link_token: '0xb0897686c545045aFc77CF20eC7A532E3120E0F1'
+    keyhash: '0xf86195cf7690c55907b2b611ebb7343a6f649bff128701cc542f0569e2c549da'
+    fee: 100000000000000
+    verify: True
 wallets:
   from_key: ${PRIVATE_KEY}
